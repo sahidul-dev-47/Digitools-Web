@@ -6,12 +6,11 @@ export default function Navbar({ cartCount }) {
     <nav className="w-full bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
 
-        {/* Logo */}
+        
         <div className="text-2xl font-extrabold text-violet-600 tracking-tight">
           DigiTools
         </div>
 
-        {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
           <a href="#products" className="hover:text-violet-600 transition-colors">Products</a>
           <a href="#features" className="hover:text-violet-600 transition-colors">Features</a>
@@ -20,9 +19,8 @@ export default function Navbar({ cartCount }) {
           <a href="#faq" className="hover:text-violet-600 transition-colors">FAQ</a>
         </div>
 
-        {/* Right Side */}
         <div className="flex items-center gap-4">
-          {/* Cart Icon */}
+      
           <a href="#cart" className="relative text-gray-700 hover:text-violet-600 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 6M7 13l-1-4m12 4l1.4 6M17 13l1-4M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
@@ -34,20 +32,20 @@ export default function Navbar({ cartCount }) {
             )}
           </a>
 
-          {/* Login */}
+          
           <a href="#login" className="hidden sm:block text-sm font-medium text-gray-700 hover:text-violet-600 transition-colors">
             Login
           </a>
 
-          {/* Get Started Button */}
+        
           
            <a href="#get-started"
-            className="px-5 py-2 rounded-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold transition-colors"
-          >
+            className="px-5 py-2 rounded-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold transition-colors">
+
             Get Started
           </a>
 
-          {/* Mobile Hamburger */}
+          
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700 hover:text-violet-600 transition-colors">
             
        <i className={`fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
@@ -55,7 +53,7 @@ export default function Navbar({ cartCount }) {
         </div>
       </div>
 
-      {/* Mobile Menu (toggle with state if needed) */}
+      
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden border-t border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-gray-700 bg-white`}>
         <a href="#products" className="hover:text-violet-600 transition-colors">Products</a>
         <a href="#features" className="hover:text-violet-600 transition-colors">Features</a>
