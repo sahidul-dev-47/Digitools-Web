@@ -50,15 +50,15 @@ export default function Banner() {
     <div className="max-w-6xl mx-auto flex justify-around text-center">
       <div>
         <h2 className="text-5xl font-bold">50K+</h2>
-        <p className="text-sm">Active Users</p>
+        <p className="text-lg font-medium mt-4">Active Users</p>
       </div>
       <div>
         <h2 className="text-5xl font-bold">200+</h2>
-        <p className="text-sm">Premium Tools</p>
+        <p className="text-lg font-medium mt-4">Premium Tools</p>
       </div>
       <div>
         <h2 className="text-5xl font-bold">4.9</h2>
-        <p className="text-sm">Rating</p>
+        <p className="text-lg font-medium mt-4">Rating</p>
       </div>
     </div>
   </div>
