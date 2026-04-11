@@ -45,6 +45,25 @@ export default function Banner() {
         </div>
 
       </div>
+
+ <div className="bg-gradient-to-r to-purple-500 from-indigo-600  text-white py-15 mt-20">
+    <div className="max-w-6xl mx-auto flex justify-around text-center">
+      <div>
+        <h2 className="text-5xl font-bold">50K+</h2>
+        <p className="text-sm">Active Users</p>
+      </div>
+      <div>
+        <h2 className="text-5xl font-bold">200+</h2>
+        <p className="text-sm">Premium Tools</p>
+      </div>
+      <div>
+        <h2 className="text-5xl font-bold">4.9</h2>
+        <p className="text-sm">Rating</p>
+      </div>
+    </div>
+  </div>
+
+
     </section>
   );
 }
