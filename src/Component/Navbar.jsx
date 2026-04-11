@@ -1,4 +1,4 @@
-
+import image from '../assets/shopping-cart.svg'
 import { useState } from 'react'
 export default function Navbar({ cartCount }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +22,7 @@ export default function Navbar({ cartCount }) {
         <div className="flex items-center gap-4">
       
           <a href="#cart" className="relative text-gray-700 hover:text-violet-600 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 6M7 13l-1-4m12 4l1.4 6M17 13l1-4M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
-            </svg>
+            <img src={image} alt="Cart" />
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-violet-600 text-white text-[10px] flex items-center justify-center font-bold">
                 {cartCount}

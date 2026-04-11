@@ -46,7 +46,7 @@ export default function Banner() {
 
       </div>
 
- <div className="bg-gradient-to-r to-purple-500 from-indigo-600  text-white py-15 mt-20">
+ <div className="bg-linear-to-r to-purple-500 from-indigo-600  text-white py-15 mt-20">
     <div className="max-w-6xl mx-auto flex justify-around text-center">
       <div>
         <h2 className="text-5xl font-bold">50K+</h2>
