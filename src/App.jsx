@@ -1,5 +1,4 @@
-
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Component/Banner'
 import Footer from './Component/Footer'
@@ -9,8 +8,7 @@ import Steps from './Component/Steps'
 import Tools from './Component/Tools'
 import Transform from './Transform'
 
-
-const getTools = async ()=>{
+const getTools = async () => {
   const res = await fetch("/Tools.json")
   return res.json()
 }
@@ -18,28 +16,28 @@ const getTools = async ()=>{
 const toolPromise = getTools()
 
 function App() {
-  
+  const [activeTab, setActiveTab] = useState('tool');
+  const [carts, setCarts] = useState([]);
 
   return (
     <div>
-      <Navbar></Navbar>
-      <Banner></Banner>
+      <Navbar  cartCount={carts.length} />
+      <Banner />
 
-       <Suspense fallback={<div>Loading...</div>}>
-         <Tools toolPromise={toolPromise}></Tools>
-       </Suspense>
+      <Suspense fallback={<div className='text-center py-20 text-2xl font-bold'>Loading Tools...</div>}>
+        <Tools 
+          toolPromise={toolPromise} 
+          setActiveTab={setActiveTab} 
+          activeTab={activeTab} 
+          carts={carts} 
+          setCarts={setCarts}
+        />
+      </Suspense>
        
-      <Steps></Steps>
-     
-      <Pricing></Pricing>
-      <Transform></Transform>
-      <Footer></Footer>
-      
-      
-     
-
-
-    
+      <Steps />
+      <Pricing />
+      <Transform />
+      <Footer />
     </div>
   )
 }
