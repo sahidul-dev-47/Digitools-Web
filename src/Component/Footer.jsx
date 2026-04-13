@@ -69,7 +69,7 @@ export default function Footer() {
                <a href="#"
                 aria-label="YouTube"
                 className="w-9 h-9 rounded-full bg-white hover:bg-violet-600 flex items-center justify-center transition-colors">
-                  <i class="fa-brands fa-square-instagram"></i>
+                  <i className="fa-brands fa-square-instagram"></i>
               </a>
 
 
@@ -78,7 +78,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="w-9 h-9 rounded-full bg-white hover:bg-violet-600 flex items-center justify-center transition-colors"
               >
-               <i class="fa-brands fa-facebook"></i>
+               <i className="fa-brands fa-facebook"></i>
               </a>
 
   
@@ -87,7 +87,7 @@ export default function Footer() {
                 aria-label="X"
                 className="w-9 h-9 rounded-full bg-white hover:bg-violet-600 flex items-center justify-center transition-colors"
               >
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </a>
 
             </div>

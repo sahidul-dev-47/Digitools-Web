@@ -2,6 +2,8 @@ import image from '../assets/shopping-cart.svg'
 import { useState } from 'react'
 export default function Navbar({ cartCount }) {
     const [isOpen, setIsOpen] = useState(false);
+
+    
   return (
     <nav className="w-full bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">

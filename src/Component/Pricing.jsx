@@ -104,7 +104,7 @@ export default function Pricing() {
               <ul className="flex flex-col gap-2">
                 {plan.features.map((f) => (
                   <li key={f} className={`flex items-center gap-2 text-sm ${plan.highlight ? "text-violet-100" : "text-gray-600"}`}>
-                    <i class="fa-solid fa-check text-green-300"></i>
+                    <i className="fa-solid fa-check text-green-300"></i>
                     {f}
                   </li>
                 ))}
